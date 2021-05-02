@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +11,10 @@
 <body>
     <div class="topnav">
         <p class="tittle">Monitor de Conversaciones</p>
-        <a class="active" href="{% url 'home' %}" style="margin-left: 60%;">Home</a>
+        <a class="{{ home|yesno:'active,' }}" href="{% url 'home' %}" style="margin-left: 60%;">Home</a>
         <a href="{% url 'mis-cvs' %}">Mis Conversacoines</a>
         <a href="{% url 'sbr-cvs' %}">Subir Conversaciones</a>
-        <a href="{% url 'login' %}">Login</a>
+        <a class="{{ login|yesno:'active,' }}" href="{% url 'login' %}">Login</a>
     </div>  
 </body>
 </html>
