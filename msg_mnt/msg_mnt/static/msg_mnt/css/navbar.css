@@ -12,12 +12,14 @@ body {
 .topnav p.tittle {
     position: absolute;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
-    font-size: 25px;
-    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 27px;
+    padding: 15px;
+    margin-top: 0px;
     margin-left: 5%;
     margin-bottom: 5px;
-    color: rgb(65, 65, 65);
+    color: white;
+    background-color: rgb(209, 93, 16);
 }
   
 .topnav a {
