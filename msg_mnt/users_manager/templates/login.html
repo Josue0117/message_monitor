@@ -24,7 +24,8 @@
 
     <div class="signup card">
         <h2>¿Aun no tienes una cuenta?</h2>
-        <form>
+        <form action="" method="POST">
+            <!--
             <input id='nombre' name="nombre" type="text" placeholder="nombre">
             <input id='apellido' name="apellido" type="text" placeholder="apellido">    
             <input id='nick' name="nick" type="text" placeholder="nick">
@@ -43,6 +44,9 @@
                 <option value="mas">Masculino</option>
                 <option value="fem">Femenino</option>
             </select>
+            -->
+            {% csrf_token %}
+            {{ form }}
             <div class="button">
                 <button>Registrarme</button>
             </div>

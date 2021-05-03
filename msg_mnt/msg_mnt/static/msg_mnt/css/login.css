@@ -29,7 +29,7 @@ p {
     color: gray;
 }
 
-input, button {
+label, button {
     margin-top: 10px;
 }
 

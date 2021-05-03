@@ -1,5 +1,7 @@
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.urls import reverse
+from users_manager.forms import SignupForm
 
 def index(request):
     return render(request,"index.html",{"home":"active"})
@@ -11,4 +13,14 @@ def sbr_conversaciones(request):
     return render(request,"index.html",{"login":"active"})
 
 def login(request):
-    return render(request,"login.html",{"login":"active"})
+    if request.method == 'POST':
+        form=SignupForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            return render(request,"index.html",{"home":"active"})
+
+    else:
+        form=SignupForm()
+
+    return render(request,"login.html",{"login":"active","form":form})

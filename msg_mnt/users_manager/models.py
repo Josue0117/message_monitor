@@ -13,7 +13,7 @@ class User(models.Model):
     VL_GROUP=3
     ROL = (
        (ACADEMIC, 'Academico'),
-       (RS_USER, 'Usuario S'),
+       (RS_USER, 'Usuario RS'),
        (VL_GROUP, 'Grupo vulnerable'),
     )
     user_rol=models.PositiveSmallIntegerField(choices=ROL,default=ACADEMIC,)
