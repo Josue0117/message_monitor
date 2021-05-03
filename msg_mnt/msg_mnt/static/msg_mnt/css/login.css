@@ -4,6 +4,7 @@ div.card {
     padding: 55px;
     background-color: white;
     box-shadow: 0 0 15px 2px rgb(207, 207, 207);
+    text-align: center;
 }
 
 div.login {
@@ -13,7 +14,7 @@ div.login {
 
 div.signup {
     margin-left: 40%;
-    width: 40%;
+    width: 35%;
 }
 
 div.button {
@@ -29,13 +30,12 @@ p {
     color: gray;
 }
 
-label, button {
-    margin-top: 10px;
+label{
+   display: none;
 }
 
-select {
-    margin-top: -15px;
-    display: block;
+input, select {
+    margin-top: 10px;
 }
 
 button {
