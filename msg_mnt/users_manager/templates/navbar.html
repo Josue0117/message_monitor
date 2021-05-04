@@ -9,12 +9,20 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="topnav">
-        <p class="tittle">Monitor de Conversaciones</p>
-        <a class="{{ home|yesno:'active,' }}" href="{% url 'home' %}" style="margin-left: 60%;">Home</a>
-        <a href="{% url 'mis-cvs' %}">Mis Conversacoines</a>
-        <a href="{% url 'sbr-cvs' %}">Subir Conversaciones</a>
-        <a class="{{ login|yesno:'active,' }}" href="{% url 'sing-up' %}">Login</a>
-    </div>  
+    <div>
+        <ul class="nav">
+            <li><p class="tittle">Monitor de Conversaciones</p></li>
+            <li style="margin-left: 55%;"><a class="{{ home|yesno:'active,' }}" href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'mis-cvs' %}">Mis Conversacoines</a></li>
+            <li><a href="{% url 'mis-cvs' %}">Mis Conversacoines</a></li>
+            <li>
+                <a>Login</a>
+                <ul>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Registro</a></li>                
+                </ul>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
