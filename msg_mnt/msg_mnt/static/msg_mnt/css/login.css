@@ -22,11 +22,15 @@ div.button {
     margin-top: 15px;
 }
 
+form {
+    text-align: left;
+}
+
 h2 {
     color: rgb(9, 92, 139)
 }
 
-p {
+p, ul li {
     color: gray;
 }
 
@@ -40,7 +44,6 @@ input, select {
 
 button {
     height: 35px;
-    width: 100px;
     color:rgb(209, 93, 16);
     font-weight: bold;
     background-color: white;

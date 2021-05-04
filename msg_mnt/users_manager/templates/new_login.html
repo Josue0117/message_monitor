@@ -24,9 +24,9 @@
 
     <div class="signup card">
         <h2>¿Aún no tienes una cuenta?</h2>
-        <form action="" method="POST">
+        <form method="POST">
             {% csrf_token %}
-            {{ form }}
+            {{ form.as_p }}
             <div class="button">
                 <button>REGISTRARME</button>
             </div>

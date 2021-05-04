@@ -1,11 +1,6 @@
 from django.db import models
 
-class User(models.Model):
-    user_name=models.CharField(max_length=50)
-    last_name=models.CharField(max_length=50)
-    nick_name=models.CharField(max_length=50)
-    user_email=models.EmailField(max_length=50)
-    password=models.CharField(max_length=50)
+class CustomUser(models.Model):
     user_age=models.IntegerField()
 
     ACADEMIC=1
