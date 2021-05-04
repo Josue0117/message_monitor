@@ -24,7 +24,7 @@ urlpatterns = [
     path('index/', views.index, name='home'),
     path('mis-conversaciones/', views.mis_conversaciones, name='mis-cvs'),
     path('sbr-conversaciones/', views.sbr_conversaciones, name='sbr-cvs'),
-    path('login_old/', views.login, name='login'),
-    path('login/', views.User_register.as_view(), name='sing-up'),
+    path('login/', views.login, name='login'),
+    path('sign-up/', views.User_register.as_view(), name='sign-up'),
     path('profile-form/', views.profile_form, name='profile-form'),
 ]
