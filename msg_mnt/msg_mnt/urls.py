@@ -18,11 +18,13 @@ from django.contrib.auth.views import LoginView
 from django.urls import path, include
 from users_manager import views
 
+# TO DO: ADD NAVBAR STYLE SINCE HERE TO PASS PARAMETERS ON THE URL  
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index, name='home'),
     path('mis-conversaciones/', views.mis_conversaciones, name='mis-cvs'),
     path('sbr-conversaciones/', views.sbr_conversaciones, name='sbr-cvs'),
-    path('login/', views.login, name='login'),
-    path('signup/', views.User_register.as_view(), name='sing_up'),
+    path('login_old/', views.login, name='login'),
+    path('login/', views.User_register.as_view(), name='sing-up'),
+    path('profile-form/', views.profile_form, name='profile-form'),
 ]

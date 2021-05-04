@@ -17,6 +17,11 @@ div.signup {
     width: 35%;
 }
 
+div.profile {
+    margin-left: 30%;
+    width: 25%;
+}
+
 div.button {
     text-align: center;
     margin-top: 15px;
@@ -34,8 +39,14 @@ p, ul li {
     color: gray;
 }
 
-label{
-   display: none;
+.signup label, .login label{
+    display: none;
+}
+
+.profile label {
+    display:block;
+    margin-top: 25px;
+    color: gray;
 }
 
 input, select {
